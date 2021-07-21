@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zelda survey</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">The Legend of Zelda - Ocarina of Time Survey</h1>
+        <p id="description" class="italic">
+          Please fill out this form once you have finished the game
+        </p>
+      </header>
+
+      <form id="survey-form">
+        <div class="form__field">
+          <label for="name" id="name-label">Name</label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Enter name"
+            required
+            class="form__input"
+          />
+        </div>
+
+        <div class="form__field">
+          <label for="email" id="email-label">Email</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter email"
+            required
+            class="form__input"
+          />
+        </div>
+
+        <div class="form__field">
+          <label for="dropdown">
+            Which option best describes your gaming history
+          </label>
+          <select id="dropdown" name="history" class="form__input">
+            <option value="" selected disabled>--Pick one--</option>
+            <option value="experienced">Played games extensively</option>
+            <option value="some">Played sometimes</option>
+            <option value="new">This is the first game I've ever played</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form__field">
+          <label for="number" id="number-label">Gold spiders killed:</label>
+          <input
+            id="number"
+            type="number"
+            min="0"
+            max="100"
+            placeholder="0 - 100"
+            class="form__input"
+          />
+        </div>
+
+        <div class="radio-check form__field">
+          <p>Which bosses did you find most difficult?</p>
+          <fieldset>
+            <legend>Hardest kid boss:</legend>
+            <label for="rad--1">
+              <input
+                type="radio"
+                id="rad--1"
+                name="hardest-boss-kid"
+                value="gohma"
+              />
+              Gohma</label
+            >
+            <label for="rad--2">
+              <input
+                type="radio"
+                id="rad--2"
+                name="hardest-boss-kid"
+                value="dodongo"
+              />
+              King Dodongo</label
+            >
+            <label for="rad--3">
+              <input
+                type="radio"
+                id="rad--3"
+                name="hardest-boss-kid"
+                value="barinade"
+              />
+              Barinade</label
+            >
+          </fieldset>
+          <fieldset>
+            <legend>Hardest temple boss:</legend>
+            <label for="rad--4">
+              <input
+                type="radio"
+                id="rad--4"
+                name="hardest-boss-temple"
+                value="phantom-gannon"
+              />
+              Phantom Gannon</label
+            >
+            <label for="rad--5">
+              <input
+                type="radio"
+                id="rad--5"
+                name="hardest-boss-temple"
+                value="volvagia"
+              />
+              Volvagia</label
+            >
+            <label for="rad--6">
+              <input
+                type="radio"
+                id="rad--6"
+                name="hardest-boss-temple"
+                value="morpha"
+              />
+              Morpha</label
+            >
+            <label for="rad--7">
+              <input
+                type="radio"
+                id="rad--7"
+                name="hardest-boss-temple"
+                value="bongo"
+              />
+              Bongo Bongo</label
+            >
+            <label for="rad--8">
+              <input
+                type="radio"
+                id="rad--8"
+                name="hardest-boss-temple"
+                value="twinrova"
+              />
+              Twinrova</label
+            >
+          </fieldset>
+        </div>
+
+        <div class="radio-check form__field">
+          <p>What items and weapons were your favorite?</p>
+          <label for="check--1">
+            <input
+              type="checkbox"
+              id="check--1"
+              name="items"
+              value="longshot"
+            />
+            Longshot</label
+          >
+          <label for="check--2">
+            <input type="checkbox" id="check--2" name="items" value="hammer" />
+            Megaton Hammer</label
+          >
+          <label for="check--3">
+            <input
+              type="checkbox"
+              id="check--3"
+              name="items"
+              value="boomerang"
+            />
+            Boomerang</label
+          >
+          <label for="check--4">
+            <input
+              type="checkbox"
+              id="check--4"
+              name="items"
+              value="big-goron-sword"
+            />
+            Big Goron's Sword</label
+          >
+          <label for="check--5">
+            <input
+              type="checkbox"
+              id="check--5"
+              name="items"
+              value="mirror-shield"
+            />
+            Mirror Shield</label
+          >
+          <label for="check--6">
+            <input
+              type="checkbox"
+              id="check--6"
+              name="items"
+              value="din-fire"
+            />
+            Din's Fire</label
+          >
+          <label for="check--7">
+            <input
+              type="checkbox"
+              id="check--7"
+              name="items"
+              value="farore-wind"
+            />
+            Farore's Wind</label
+          >
+          <label for="check--8">
+            <input
+              type="checkbox"
+              id="check--8"
+              name="items"
+              value="nayru-love"
+            />
+            Nayru's Love</label
+          >
+          <label for="check--9">
+            <input
+              type="checkbox"
+              id="check--9"
+              name="items"
+              value="fire-arrow"
+            />
+            Fire Arrows</label
+          >
+          <label for="check--10">
+            <input
+              type="checkbox"
+              id="check--10"
+              name="items"
+              value="ice-arrow"
+            />
+            Ice Arrows</label
+          >
+          <label for="check--11">
+            <input
+              type="checkbox"
+              id="check--11"
+              name="items"
+              value="hover-boot"
+            />
+            Hover Boots</label
+          >
+        </div>
+
+        <div class="form__field">
+          <label for="comment">Anything else you want to add?</label>
+          <textarea
+            id="comment"
+            name="additional-comment"
+            placeholder="Enter comment"
+            class="form__input textarea"
+          ></textarea>
+        </div>
+
+        <div>
+          <p class="italic">Thanks for your feedback</p>
+          <button id="submit" type="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
