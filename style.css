@@ -1,13 +1,16 @@
-/* BASIC SETUP */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
+
+/* BASIC SETUP */
 :root {
   --space: 0.4em;
   font-size: 20px;
 }
+
 body {
   font-family: 'Open sans', sans-seriff;
   color: #eee;
 }
+
 body::before {
   content: '';
   position: fixed;
@@ -17,7 +20,8 @@ body::before {
   width: 100%;
   z-index: -1;
   background-color: rgb(30, 30, 30);
-  background-image: url(img/zelda-background.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)),
+    url(img/zelda-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -28,6 +32,7 @@ body::before {
   width: 100%;
   margin: 3.125rem auto 1rem auto;
 }
+
 @media screen and (min-width: 600px) {
   .container {
     width: 600px;
@@ -44,9 +49,11 @@ h1 {
   color: white;
   margin-top: 0;
 }
+
 p {
   margin-bottom: var(--space);
 }
+
 .italic {
   font-style: italic;
   font-weight: 300;
@@ -58,17 +65,20 @@ p {
 form,
 header {
   padding: 2rem 0.4rem 0.4rem 0.4rem;
-  background-color: rgba(192, 224, 255, 0.15);
+  background-color: rgba(52, 58, 64, 0.6);
   border-radius: 0.4rem;
 }
+
 @media screen and (min-width: 600px) {
   form {
     padding: 2rem 1.5rem 1rem 1.5rem;
   }
 }
+
 .form__field {
   margin-bottom: 2.5em;
 }
+
 .form__input {
   display: block;
   width: 100%;
@@ -76,14 +86,17 @@ header {
   padding: 0.7em;
   box-sizing: border-box;
 }
+
 .radio-check label {
   display: block;
   margin-bottom: 0.6em;
 }
+
 .textarea {
   resize: vertical;
   min-height: 5rem;
 }
+
 .submit-button {
   font-size: 1.1rem;
   display: block;
